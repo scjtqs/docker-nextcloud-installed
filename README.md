@@ -4,7 +4,8 @@
 > cd nextcloud-docker-installed
 
 > docker-compose up -d
-
+> 
+> 预制nextcloud版本为 18.0.2
 
 ## 关闭
 
