@@ -1,0 +1,27 @@
+2020/03/19 05:02:27 [emerg] 1#1: host not found in upstream "nextcloud_web" in /etc/nginx/conf.d/nextcloud.conf:15
+2020/03/19 05:02:29 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:02:30 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:02:31 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:02:33 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:02:36 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:02:40 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:02:48 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:03:01 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:03:28 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:04:20 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:05:21 [emerg] 1#1: cannot load certificate "/etc/certs/scjtqs.fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/certs/scjtqs.fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/03/19 05:06:22 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:21 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:23 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:24 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:25 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:27 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:30 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:34 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:42 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/nextcloud.conf:60
+2020/03/19 05:07:55 [emerg] 1#1: unexpected "}" in /etc/nginx/conf.d/onlyoffice.conf:43
+2020/03/19 05:08:44 [emerg] 1#1: host not found in upstream "nextcloud_web" in /etc/nginx/conf.d/nextcloud.conf:14
+2020/03/19 05:08:46 [error] 6#6: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: cloud.scjtqs.com, request: "HEAD / HTTP/1.1", upstream: "http://172.25.0.4:80/", host: "localhost:800"
+2020/03/19 05:08:46 [error] 6#6: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: cloud.scjtqs.com, request: "HEAD / HTTP/1.1", upstream: "http://172.25.0.4:80/", host: "localhost:800"
+2020/03/19 05:10:19 [crit] 6#6: *35 mkdir() "/var/cache/nginx/proxy_temp/1" failed (28: No space left on device) while reading upstream, client: 172.25.0.1, server: cloud.scjtqs.com, request: "GET /settings/apps/list HTTP/1.1", upstream: "http://172.25.0.4:80/settings/apps/list", host: "localhost:800"
+2020/03/19 05:13:14 [crit] 6#6: *291 mkdir() "/var/cache/nginx/proxy_temp/2" failed (28: No space left on device) while reading upstream, client: 172.25.0.1, server: cloud.scjtqs.com, request: "GET /settings/apps/list HTTP/1.1", upstream: "http://172.25.0.4:80/settings/apps/list", host: "localhost:800"
