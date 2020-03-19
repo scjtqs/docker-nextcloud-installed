@@ -20,36 +20,17 @@
 
 ## 一些默认参数
 
-> nextcloud安装时的数据库地址，将“localhost”改成db,用户root，密码root。
-
-> nginx 的反向代理配置需要自己写了，我这里就没有预制了。
-
-## 关于使用 nginx 反向代理nextcloud自带的apache并对外使用https的一些建议：
-
-> 请在config.php中添加一行 `'overwriteprotocol' => 'https',`
-
-> `'overwrite.cli.url' => 'https://your.domain.com:8443',`//此处写上完整的对外域名
-
-### nginx 反向代理的部分片段
-````nginx
-   location = /.well-known/carddav {
-      return 301 $scheme://$host:$server_port/remote.php/dav;
-    }
-    location = /.well-known/caldav {
-      return 301 $scheme://$host:$server_port/remote.php/dav;
-    }
-location / {
-         proxy_http_version 1.1;
-#        proxy_redirect off;
-          proxy_pass http://182.168.50.127:9080;
-         proxy_set_header Host $http_host;
-         proxy_set_header X-Forwarded-Proto $scheme;
-         proxy_set_header X-Real-IP $remote_addr;
-         proxy_set_header Upgrade $http_upgrade;
-         proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
- }
-
-````
+> nextcloud已经安装完成并完成初步配置，默认用户 admin 密码 admin
+> 
+> 数据库root密码为root
+> 
+> nginx预制配置文件中的域名需要自行修改，默认为cloud.scjtqs.com
+> 
+> docker-compose,yml 中的域名为cloud.scjtqs.com ，需要自行修改。
+> 
+> nginx 的反向代理，预制了nextcloud和onlyoffice 的，https的部分需要自行放入证书并修改对应的域名。
+> 
+> 默认的文件路径为 nextcloud-data，可以自行移动到其他位置，并修改docker-compose.yml中的配置。或者ln -s 软连接过来。
 
 # 升级流程
 > docker-compose 升级镜像真tm方便：
