@@ -1,7 +1,7 @@
 ## 开始使用
-> git clone https://github.com/scjtqs/nextcloud-docker.git nextcloud-docker
+> git clone https://github.com/scjtqs/docker-nextcloud-installed.git nextcloud-docker-installed
 
-> cd nextcloud-docker
+> cd nextcloud-docker-installed
 
 > docker-compose up -d
 
