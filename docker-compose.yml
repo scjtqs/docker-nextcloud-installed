@@ -35,7 +35,7 @@ services:
       - MYSQL_USER=nextcloud
 
   nextcloud_web:
-    image: nextcloud:apache
+    image: scjtqs/nextcloud:amd64
     container_name: nextcloud_web
     hostname: nextcloud_web
     depends_on:
