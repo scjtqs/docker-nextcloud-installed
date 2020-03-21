@@ -35,7 +35,7 @@ services:
       - MYSQL_USER=nextcloud
 
   nextcloud_web:
-    image: nextcloud:apache
+    image: scjtqs/nextcloud
     container_name: nextcloud_web
     hostname: nextcloud_web
     depends_on:
@@ -57,6 +57,10 @@ services:
       - DB_HOST=db
     ports:
       - 9080:80/tcp
+      #bt 穿透
+      - 6801:6800
+      - 51448:51448
+      - 6881-6999:6881-6999
     networks:
       - cloud_net
     volumes:
